@@ -12,7 +12,7 @@
     <div class = "joon">
 <h1>Forex Profit Calculator</h1>
 <label >Base Currency</label>
-<select id = "fullname">
+<select id = "one">
 
     <option>Please Select</option>
     <option value="USD">USD</option>
@@ -22,14 +22,14 @@
 
 <label> Currency Pair</label>
 
-<select id = "age">
+<select id = "two">
 
     <option>Please Select</option>
     <option value="EUR/USD">EUR/USD</option>
     <option value="USD/JPY">USD/JPY</option>
 </select>
 <label> Account Type </label>
-<select id = "industry">
+<select id = "three">
 
     <option>Please Select</option>
     <option value="Micro(1 lot = 1000)">Micro(1 lot = 1000)</option>
@@ -37,23 +37,24 @@
 </select>
 <br>
 <label> Volume in Lots</label>
-<input type="text"  id="six">
+<input type="text"  id="four">
 
 <label> Open Price</label>
-<input type="text" value="1.087" id="seven">
-
-<label> Set Stop Loss Amount</label>
-<input type="text" id="eight">
-
-<label> Set Take Profit Amount</label>
-<input type="text"  id="nine">
+<input type="text" value="1.087" id="five">
 <br>
+<label> Set Take Profit Amount</label>
+<input type="text"  id="six">
+<br>
+<label> Set Stop Loss Amount</label>
+<input type="text" id="seven">
+
+
 <label> Trade Type</label>
 <input type="button" value ="Buy"  id="ten" onclick="this.style.color='Green'">
 <input type="button"value = "Sell"  id="teni" onclick="this.style.color='red'">
 <br>
 
-<input type="button" value="Submit" name="submit" id="submit" onClick="display();netSalary(); this.style.color='blue';"/>
+<input type="button" value="Submit" name="submit" id="submit" onClick="pipUsd();takeProfit();"/>
 
 
 
@@ -68,46 +69,48 @@
     </tr>
     <tr>
         <th>
+            <h4>Pip Value (USD)</h4>
+            <td id ="zero"></td>
+        </th>
+    </tr>
+    <tr>
+        <th>
             <h4>Take Profit price</h4>
             <td id = "first"></td>
         </th>
     </tr>
     <tr>
         <th>
-            <h4>Stop Loss at </h4>
+            <h4>Stop Loss Price </h4>
             <td id = "second"></td>
         </th>
     </tr>
     <tr>
         <th>
-            <h4>Take Profit at</h4>
+            <h4>Take Profit at (pip)</h4>
             <td id = "third"></td>
         </th>
     </tr>
     <tr>
         <th>
-            <h4>Stop Loss, Pips</h4>
+            <h4>Stop Loss at (Pip)</h4>
             <td id = "fourth"></td>
         </th>
     </tr>
-    <tr>
-        <th>
-            <h4>Take Profit, Pips</h4>
-            <td id ="fith"></td>
-        </th>
-    </tr>
+    
     <tr>
         <th>
             <h4>Set Stop Loss Amount</h4>
-            <td id ="sixth"></td>
+            <td id ="fifth"></td>
         </th>
     </tr>
     <tr>
         <th>
             <h4>Set Take Profit Amount</h4>
-            <td id ="seventh"></td>
+            <td id ="sixth"></td>
         </th>
     </tr>
+    
    
 </div>
 
