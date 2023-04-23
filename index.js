@@ -45,7 +45,7 @@ function takeLossPip() {
   pipValue =(onePip/ openprice)*volume;
     tL = (pipValue/takeLossLevel)*volume;
   tlP = tL - openprice;
-   document.getElementById("fourth"").textContent = tL;
+   document.getElementById("fourth"").textContent = tlP;
 }
 
 
