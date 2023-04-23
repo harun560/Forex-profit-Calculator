@@ -15,7 +15,7 @@
     takeProfitLevel =document.getElementById("six").value;
     pipValue =(onePip/ openprice)*volume;
     tp = (takeProfitLevel/pipValue)*volume;
-    tp = Math.floor(tp);
+    tp = tp.toFixed(3);
     document.getElementById("first").textContent = tp;
   }
 
