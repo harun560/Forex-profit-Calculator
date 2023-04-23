@@ -33,7 +33,7 @@ volume = document.getElementById("four").value;
     openprice = document.getElementById("five").value;
     takeProfitLevel =document.getElementById("six").value;
    tp = (pipValue/takeProfitLevel)*volume;
-  tpP = tp - openprice;
+  tpP = tp-openprice;
   document.getElementById("third").textContent =  tpP;
   
   
