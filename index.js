@@ -31,12 +31,21 @@ function takeLoss() {
 function takeprofitPip() {
 volume = document.getElementById("four").value;
     openprice = document.getElementById("five").value;
-    takeProfitLevel =document.getElementById("six").value;
+    takeProfitLevel = document.getElementById("six").value;
    tp = (pipValue/takeProfitLevel)*volume;
-  tpP = tp-openprice;
+   tpP = tp - openprice;
   document.getElementById("third").textContent =  tpP;
-  
-  
+ 
+}
+
+function takeLossPip() {
+  volume = document.getElementById("four").value;
+    openprice = document.getElementById("five").value;
+   takeLossLevel = document.getElementById("seven").value;
+  pipValue =(onePip/ openprice)*volume;
+    tL = (pipValue/takeLossLevel)*volume;
+  tlP = tL - openprice;
+   document.getElementById("fourth"").textContent = tL;
 }
 
 
