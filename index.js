@@ -36,6 +36,7 @@ volume = document.getElementById("four").value;
    tp = (pipValue/takeProfitLevel)*volume;
   tp = tp.toFixed(3);
    tpP = tp - openprice;
+  tpP = tpP.toFixed(3);
   document.getElementById("third").textContent =  tpP;
  
 }
@@ -47,6 +48,7 @@ function takeLossPip() {
   pipValue =(onePip/ openprice)*volume;
     tL = (pipValue/takeLossLevel)*volume;
   tlP = tL - openprice;
+  tlP =tlP.toFixed(3);
    document.getElementById("fourth").textContent = tlP;
 }
 
