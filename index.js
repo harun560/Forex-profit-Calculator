@@ -8,7 +8,7 @@
    pipValue = pipValue.toFixed(3);
     document.getElementById("zero").textContent = pipValue;
   }
-
+//Pip Value = (One Pip / Exchange Rate) * Lot Size
   function takeProfit() {
     volume = document.getElementById("four").value;
     openprice = document.getElementById("five").value;
